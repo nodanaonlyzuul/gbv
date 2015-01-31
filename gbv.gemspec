@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Gbv::VERSION
   spec.authors       = ["nodanaonlyzuul"]
   spec.email         = ["beholdthepanda@gmail.com"]
-  spec.summary       = %q{A command line interface for Guided By Voices Songs}
-  spec.description   = %q{This is a CLI for Guided By Voices Songs. It just scrapes from gbvdb.com}
+  spec.summary       = %q{A CLI tool for Guided By Voices Lyrics}
+  spec.description   = %q{The world's finest and only CLI tool for Guided By Voices lyrics.}
   spec.homepage      = "https://github.com/nodanaonlyzuul/gbv"
   spec.license       = "MIT"
 

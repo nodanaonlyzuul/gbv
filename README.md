@@ -1,6 +1,6 @@
 # gbv
 
-This is a CLI for Guided By Voices Lyrics.
+This is the world's finest and only CLI tool for Guided By Voices lyrics.
 
 ## Installation
 
