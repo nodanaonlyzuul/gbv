@@ -22,7 +22,7 @@ Or install it yourself as:
 
 From the command line:
 
-```bash
+```
 $ gbv Buzzards and dreadful crows
 
 The lifeblood - the lighthouse flashing
