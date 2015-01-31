@@ -5,14 +5,31 @@ class Gbv::SongFetcher
   require 'song'
 
   def self.fetch_song(title)
-    url = "http://www.gbvdb.com/track.asp?track=#{URI.encode(title)}&version=&live=False"
-    response = HTTParty.get(url)
+    begin
+      response = HTTParty.get(song_url(title))
 
-    if response.code == 200
-      return "No song found. Check your title. This app has bad correction." if response.body.include?("No data found")
-      song = Song.new(Nokogiri::HTML(response))
+      if response.body.include?("No data found")
+        search_response = HTTParty.get(search_url(title))
+        song_node       = Nokogiri::HTML(search_response).css("td a").find_all {|a| a['href'].include? "all=true" }.first
+        song = Song.new(Nokogiri::HTML(HTTParty.get(song_url(song_node.inner_text))))
+      else
+        song = Song.new(Nokogiri::HTML(response))
+      end
+
       song.lyrics
+    rescue Exception => e
+      return "Something went wrong. This thing is finicky about spelling. I'm not a scientist."
     end
-
   end
+
+private
+
+  def self.song_url(title)
+    "http://gbvdb.com/track.asp?track=#{URI.encode(title)}&version=&live=False"
+  end
+
+  def self.search_url(title)
+    "http://gbvdb.com/tracks.asp?song_title=#{URI.encode(title)}"
+  end
+
 end
