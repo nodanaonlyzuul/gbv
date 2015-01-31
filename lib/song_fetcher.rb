@@ -16,7 +16,7 @@ class Gbv::SongFetcher
         song = Song.new(Nokogiri::HTML(response))
       end
 
-      song.lyrics
+      song
     rescue Exception => e
       return "Something went wrong. This thing is finicky about spelling. I'm not a scientist."
     end

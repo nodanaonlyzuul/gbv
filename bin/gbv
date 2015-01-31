@@ -7,4 +7,7 @@ rescue LoadError
   require 'gbv'
 end
 
-puts Gbv.fetch_song(ARGV.join(" ").strip)
+song = Gbv.fetch_song(ARGV.join(" ").strip)
+
+puts song.title
+puts song.lyrics
