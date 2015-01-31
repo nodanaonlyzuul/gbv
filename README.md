@@ -1,6 +1,6 @@
-# Gbv
+# gbv
 
-TODO: Write a gem description
+This is a CLI for Guided By Voices Lyrics.
 
 ## Installation
 
@@ -20,7 +20,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+From the command line:
+
+```bash
+$ gbv Buzzards and dreadful crows
+
+The lifeblood - the lighthouse flashing
+16 chicks remain on watch
+For the wheels to come rolling in
+And they do...
+Yes they always do
+We'd be bored and disappointed if they didn't
+
+Buzzards and dreadful crows
+right on the tip of my nose
+... snip
+```
 
 ## Contributing
 
