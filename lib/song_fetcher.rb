@@ -4,6 +4,7 @@ class Gbv::SongFetcher
   require 'nokogiri'
   require 'song'
 
+  # This, ladies and gentlemen, is weird, programatic code at its worst
   def self.fetch_song(title)
     begin
       response = HTTParty.get(song_url(title))
