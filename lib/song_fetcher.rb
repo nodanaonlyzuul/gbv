@@ -9,6 +9,7 @@ class Gbv::SongFetcher
     response = HTTParty.get(url)
 
     if response.code == 200
+      return "No song found. Check your title. This app has bad correction." if response.body.include?("No data found")
       song = Song.new(Nokogiri::HTML(response))
       song.lyrics
     end
