@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["beholdthepanda@gmail.com"]
   spec.summary       = %q{A command line interface for Guided By Voices Songs}
   spec.description   = %q{This is a CLI for Guided By Voices Songs. It just scrapes from gbvdb.com}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/nodanaonlyzuul/gbv"
   spec.license       = "MIT"
 
   spec.files         = Dir['bin/*','lib/**/*']
