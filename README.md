@@ -23,7 +23,7 @@ Or install it yourself as:
 From the command line:
 
 ```
-$ gbv Buzzards and dreadful crows
+$ gbv Buzzards and Dreadful Crows
 
 The lifeblood - the lighthouse flashing
 16 chicks remain on watch
@@ -36,6 +36,10 @@ Buzzards and dreadful crows
 right on the tip of my nose
 ... snip
 ```
+
+Pipe it into your favorite text-to-speech program
+
+```$ gbv "hardcore ufo's" | say```
 
 ## Contributing
 
