@@ -43,7 +43,7 @@ Pipe it into your favorite text-to-speech program
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/gbv/fork )
+1. Fork it ( https://github.com/nodanaonlyzuul/gbv/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
