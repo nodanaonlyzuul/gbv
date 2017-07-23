@@ -23,8 +23,6 @@ class Gbv::SongFetcher
     end
   end
 
-private
-
   def self.song_url(title)
     "http://gbvdb.com/track.asp?track=#{URI.encode(title)}&version=&live=False"
   end
